@@ -1,0 +1,120 @@
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+section#introducao {
+    margin: 20px 0;
+    width: 97%;
+    text-align: justify;
+}
+
+section#introducao h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #dfdfdf;
+}
+
+section#introducao p {
+    font-size: 1.2em;
+    color: #aaaaaa;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+article#sudeste{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.603)), url('../img/sp/1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+article#sul{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.603)), url('../img/rs/1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+article#norte{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.603)), url('../img/am/1.webp');
+    background-size: cover;
+    background-position: center center;
+}
+article#nordeste{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.603)), url('../img/pe/1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+article#centro-oeste{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.603)), url('../img/df/1.jpg');
+    background-size: cover;
+    background-position: center center; 
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+section#regioes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+section#regioes article {
+    /*background: #044257;*/
+    border: 1px solid #555555b6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+}
+
+section#regioes h2 {
+    color: #dfdfdf;
+    margin-bottom: 100px;
+}
+
+section#regioes p {
+    height: 200px;
+    color: rgb(219, 219, 219);
+}
+
+section#regioes a {
+    display: inline-block;
+    background-color: #005f73;
+    border: 1px solid #00323b;
+    color: #edf6f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+section#regioes a:hover {
+    background-color: #004755;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
